@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake Pinterest</title>
+    <title>
+        {% block titulo %}
+        Fake Pinterest
+        {% endblock %}
+    </title>
 </head>
 <body>
+    {% block body %}
     <h1>Fake Pinterest</h1>
 
     <P>Agora vamos continuar nosso site...</P>
+    {% endblock %}
 </body>
 </html>
