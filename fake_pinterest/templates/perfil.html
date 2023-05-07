@@ -5,26 +5,37 @@ Perfil {{ usuario }}
 {% endblock %}
 
 {% block body %}
+
 <body>
     {% include "navbar.html" %}
 
-    <h1>Perfil do usuário: {{ usuario.username }}</h1>
-
     {% if form %}
-    <form method="POST" enctype="multipart/form-data">
-    {{ form.csrf_token }}
-        {{ form.foto }}
-        {{ form.botao_confirmacao }}
-    </form>
-    {% endif %}
+    <div class="container">
 
-    
-    
-    {% for foto in usuario.fotos %}
-        <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}">
-    
-    {% endfor %}
+        <form class="bloco-add-img" method="POST" enctype="multipart/form-data">
+            {{ form.csrf_token }}
+            <h2>{{ usuario.username }} - Enviar foto</h2>
+            <div class="bloco-input-botao">
+                <div class="bloco-arquivo">
+                    {{ form.foto(class="botao-arquivo") }}
+                </div>
+            </div>
+            {{ form.botao_confirmacao(class="botao-login") }}
+        </form>
 
-
+        {% else %}
+        <div class="bloco-add-img">
+            <h2>{{ usuario.username }}</h2>
+        </div>
+        
+        {% endif %}
+        <div class="conteudo">
+            {% for foto in usuario.fotos %}
+                <div class="bloco-imagem">
+                    <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}" alt="Pinterest" />
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </body>
 {% endblock %}
