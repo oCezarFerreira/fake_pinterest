@@ -37,7 +37,7 @@ python criar_banco.py
 python main.py
 ```
 
-Não deixei o banco de dados criado por conta do SQLAclhemy estar estourando um erro de
+Não deixei o banco de dados criado por conta do SQLAlchemy estar estourando um erro de
 integridade da chave estrangeira quando o projeto é clonado.
 Mas deixei um arquivo com as fotos usadas na criação do projeto para você não ter que ficar caçando
 foto para testar.
