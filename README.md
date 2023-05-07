@@ -18,21 +18,35 @@ Python 3.11.3.
 ```
 python -m venv venv
 ```
+### Ative o ambiente virtual:
+```
+venv/Scripts/activate
+```
 
 ### Instale as dependências do projeto com:
 ```
 pip install -r requirements.txt
 ```
+### Cria o banco de dados com:
+```
+python criar_banco.py
+```
+
 ### Agora é só ser feliz com:
 ```
 python main.py
 ```
 
-Ser der algum erro, boa sorte kkkk
+Não deixei o banco de dados criado por conta do SQLAclhemy estar estourando um erro de
+integridade da chave estrangeira quando o projeto é clonado.
+Mas deixei um arquivo com as fotos usadas na criação do projeto para você não ter que ficar caçando
+foto para testar.
+
+E se der der algum erro, boa sorte kkkk
 
 ## Futuro
 
-Talvez um dia eu retoner nesse projeto para brincar um pouco e adicionar mais algumas features como:
+Talvez um dia eu retorne nesse projeto para brincar um pouco e adicionar mais algumas features como:
 - Barra de pesquisa
 - Redefinir senha
 - Sistema de verificação de e-mail
