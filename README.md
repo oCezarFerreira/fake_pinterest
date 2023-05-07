@@ -18,11 +18,16 @@ Python 3.11.3.
 ```
 python -m venv venv
 ```
+### Ative o ambiente virtual:
+```
+venv/Scripts/activate
+```
 
 ### Instale as dependências do projeto com:
 ```
 pip install -r requirements.txt
 ```
+
 ### Agora é só ser feliz com:
 ```
 python main.py
