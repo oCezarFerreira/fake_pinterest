@@ -32,7 +32,7 @@ Ser der algum erro, boa sorte kkkk
 
 ## Futuro
 
-Talvez um dia eu retoner nesse projeto para brincar um pouco e adicionar mais algumas features como:
+Talvez um dia eu retorne nesse projeto para brincar um pouco e adicionar mais algumas features como:
 - Barra de pesquisa
 - Redefinir senha
 - Sistema de verificação de e-mail
